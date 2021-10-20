@@ -1,38 +1,102 @@
+html, body {
+  height: 100%;
+  position: relative;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(36,36,36,1) 35%, rgba(82,82,82,1) 100%);
+}
+
 .App {
   text-align: center;
+  padding: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App img {
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.info {
+  position: absolute; 
+  background: rgba(0, 0, 0, .6); /* Black see-through */
+  color: #f1f1f1; 
+  padding: 10px 20px 20px;
+  margin-top: -99px;
+  width: 360px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.info h1 {
+  margin: 5px 0;
+}
+
+.info p {
+  margin: 0 auto;
+}
+
+.bio {
+  background: #f1f1f1;
+  padding: 1px 10px;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 0 0 5px 5px;
+}
+
+.social {
+  list-style: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  background: #fff;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0 auto;
+  width: 250px;
+  padding: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.social li {
+  width: 50px;
+  padding: 7px 0 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social li img {
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
 }
+
+.social li:nth-child(1) {
+  background: #fff;
+}
+
+.social li:nth-child(2) {
+  background: #3b5998;
+  color: #fff;
+}
+
+.social li:nth-child(3) {
+  background: #bc2b8d;
+  color: #fff;
+  padding: 2px 0 0;
+}
+
+.social li:nth-child(3) img {
+  height: 40px;
+  width: 40px;
+}
+
+.social li:nth-child(4) {
+  background: #2867b2;
+  color: #fff;
+}
+
+.social li:nth-child(5) {
+  background: #333333;
+  color: #fff;
+}
+
+
+
